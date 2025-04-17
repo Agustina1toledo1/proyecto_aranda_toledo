@@ -4,11 +4,14 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+    //public function test(){
+      //  return "Hola Codigniter-";
+    //}
     public function index(){
         $data['titulo']='principal';
         echo view('front/head_view.php', $data);
         echo view('front/nav_view.php');
-        echo view('front/plantilla.php');
+        echo view('front/inicio.php');
         echo view('front/footer_view.php');
     }
     public function contacto() {
@@ -26,6 +29,14 @@ class Home extends BaseController
             echo view('front/head_view', $data);
             echo view('front/nav_view');
             echo view('front/terminosYUsos');
+            echo view('front/footer_view');
+        }
+    public function comercializacion() {
+            // Lógica para la página de contacto
+            $data['titulo'] = 'Comercializacón';
+            echo view('front/head_view', $data);
+            echo view('front/nav_view');
+            echo view('front/comercializacion');
             echo view('front/footer_view');
         }
 

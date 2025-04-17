@@ -1,0 +1,50 @@
+.carousel-promo{
+    
+    padding: 15px;
+    background-color: #2bbc5b;
+}
+.carousel-promo h5{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.navbar-flex{
+    display: flex;
+    
+}
+.centrado{
+    width: 86%;
+    align-items: center;
+    
+}
+.navbar-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.navbar-logo-busqueda  {
+    justify-content: space-between;
+}
+.navbar-form{
+    width: 50%;
+}
+.nav-link, .btn, .form-control{
+    font-size: 25px;
+}
+.navbar-ul{
+    width: 100%;
+    justify-content: space-between;
+}
+
+hr{
+    height: 1px;
+    background-color: #4272d2;
+}
+.navbar-menu{
+    position: top;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .carousel-promo{
+        background-color: #27c80e;
+    }
+}
